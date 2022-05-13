@@ -13,6 +13,7 @@ public class StringProccessing {
 	public StringProccessing(String str)
 	{
 		this.str=str;
+		this.str=this.str.replaceAll("־", " ");
 		TrainedTokenizer tokenizer=new TrainedTokenizer();
 		try {
 			tokens=tokenizer.tokenize(this.str);
