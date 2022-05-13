@@ -13,5 +13,18 @@
 	<classpathentry kind="lib" path="C:/Users/HP/.m2/repository/com/github/goxr3plus/java-google-speech-api/V2.0/java-google-speech-api-V2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/pdfbox-app-2.0.25.jar"/>
 	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/fuzzywuzzy-1.3.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/ooxml-lib/commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/ooxml-lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/ooxml-lib/curvesapi-1.07.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/poi-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/poi-examples-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/poi-javadoc-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/poi-ooxml-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/poi-ooxml-full-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/poi-scratchpad-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/poi-excelant-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/auxiliary/fontbox-2.0.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/auxiliary/graphics2d-0.35.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Desktop/FINAL PROJECT 3RD YEAR/poi-bin-5.2.2/auxiliary/pdfbox-2.0.25.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
