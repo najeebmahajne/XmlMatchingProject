@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akn4il="http://www.justice.gov.il/propetary.xsd">
+  <officialGazette xmlns="" name="סח">
+    <meta>
+      <identification source="#kensset">
+        <FRBRWork>
+          <FRBRthis value="/akn/il/officialGazette/lawBook/2020/2790/!main"/>
+          <FRBRuri value="/akn/il/officialGazette/lawBook/2020/2790"/>
+          <FRBRalias name="" value="/akn/il/officialGazette/‏סח‎/‏התשף‎/2790"/>
+          <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+          <FRBRauthor as="#מחבר" href="#רשומות"/>
+          <componentInfo>
+            <componentData href="/akn/il/act/law/2020/2084505" name="חוק" showAs="قانون خدمات الدفع (تعديل) لسنة 5780-2020 "/>
+            <componentData href="/akn/il/act/law/2020/2084506" name="חוק" showAs="قانون ترخيص خدمات ومهن في فرع المركبات (تعديل رقم 6 (لسنة 5780-2020 "/>
+            <componentData href="/akn/il/act/law/2020/2084507" name="חוק" showAs="قانون تعديل قانون المرور (رقم 120) (تعديل) لسنة 5780-2020"/>
+          </componentInfo>
+          <FRBRcountry value="il"/>
+          <FRBRsubtype showAs="lawBook" value="lawBook"/>
+          <FRBRnumber value="2790"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/il/officialGazette/lawBook/2020/2790/heb@/!main"/>
+          <FRBRuri value="/akn/il/officialGazette/lawBook/2020/2790/heb@"/>
+          <FRBRalias name="" value="/akn/il/officialGazette/‏סח‎/‏התשף‎/2790/heb@"/>
+          <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+          <FRBRauthor as="#מחבר" href="#רשומות"/>
+          <componentInfo>
+            <componentData href="/akn/il/act/law/2020/2084505/heb@" name="חוק" showAs="חוק שירותי תשלום (תיקון), התש״ף-2020"/>
+            <componentData href="/akn/il/act/law/2020/2084506/heb@" name="חוק" showAs="חוק רישוי שירותים ומקצועות בענף הרכב (תיקון מס' 6), התש״ף-2020"/>
+            <componentData href="/akn/il/act/law/2020/2084507/heb@" name="חוק" showAs="חוק לתיקון פקודת התעבורה (מס' 120) (תיקון), התש״ף-2020"/>
+          </componentInfo>
+          <FRBRlanguage language="heb"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/il/officialGazette/lawBook/2020/2790/heb@/main.akn"/>
+          <FRBRuri value="/akn/il/officialGazette/lawBook/2020/2790/heb@.akn"/>
+          <FRBRalias name="" value="/akn/il/officialGazette/‏סח‎/‏התשף‎/2790/heb@.akn"/>
+          <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+          <FRBRauthor as="#מחבר" href="#רשומות"/>
+          <componentInfo>
+            <componentData href="/akn/il/officialGazette/lawBook/2020/2790/heb@/main.akn" name="ספר החוקים" showAs="كتاب القوانين"/>
+            <componentData href="media/Emblem_of_Israel.png" name="סמל המדינה" showAs="رمز دولة اسرائيل"/>
+          </componentInfo>
+          <FRBRformat value="xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication akn4il:date="כג-שבט-התשף" date="2020-02-18" name="ספר החוקים" number="2790" showAs="كتاب القوانين"/>
+      <references source="#רשומות">
+        <original eId="gazette_rol" href="/akn/il/officialGazette/lawBook/2020/2790/heb@" showAs="origin"/>
+        <TLCConcept eId="ספר_החוקים" href="/akn/ontology/concept/il/ספר_החוקים" showAs="كتاب القوانين"/>
+        <TLCOrganization eId="רשומות" href="/akn/ontology/organizations/il/רשומות" showAs="generation"/>
+        <TLCRole eId="מחבר" href="/akn/ontology/roles/il/מחבר" showAs="كاتب الملف"/>
+        <TLCRole eId="עורך" href="/akn/ontology/roles/il/עורך" showAs="محرر الملف"/>
+        <TLCConcept eId="תאריך_פרסום_המסמך" href="/akn/ontology/concept/il/תאריך_פרסום_המסמך" showAs="تاريخ نشر الملف"/>
+      </references>
+      <proprietary source="#רשומות">
+        <akn4il:footerEditoriaInfo class="footerEditorialInfo">
+          <akn4il:price>המחיר 81 אגורות</akn4il:price>
+          <akn4il:ISSN>3030-0334 ISSN</akn4il:ISSN>
+          <akn4il:gazettePrinter>סודר במח' רשומות, משרד המשפטים, והודפס במדפיס הממשלתי</akn4il:gazettePrinter>
+        </akn4il:footerEditoriaInfo>
+      </proprietary>
+      <presentation source="#רשומות">
+        <akn4il:officialGazetteeCSS>officialGazettee.css</akn4il:officialGazetteeCSS>
+      </presentation>
+    </meta>
+    <coverPage>
+      <container eId="coverPage_1" name="עמוד_שער">
+        <block name="firstPartOfCover">
+          <img class="centerd" src="media/Emblem_of_Israel.png"/>
+          <organization refersTo="#רשומות">السجلات</organization>
+          <docType refersTo="#ספר_החוקים">كتاب القوانين</docType>
+        </block>
+        <block class="underline" name="secondPartOfCover">
+          <docDate akn4il:date="כג-שבט-התשף" date="2020-02-18" eId="coverPage_1__docdate_1_he" refersTo="#תאריך_פרסום_המסמך">כ"ג בשבט התש"ף</docDate>
+          <docNumber>2790</docNumber>
+          <docDate alternativeTo="coverPage_1__docdate_1_he" date="2020-02-18" eId="coverPage_1__docdate_1_gr" refersTo="#תאריך_פרסום_המסמך">18 בפברואר 2020</docDate>
+        </block>
+        <toc>
+          <tocItem href="" level="1">
+            <tocHeading/>
+            <tocHeading>עמוד</tocHeading>
+          </tocItem>
+          <tocItem href="#cmp_1" level="1">
+            <tocHeading>חוק שירותי תשלום (תיקון), התש"ף-2020</tocHeading>
+            <tocPointer href="#eop_14" type="page">14</tocPointer>
+          </tocItem>
+          <tocItem href="#cmp_2" level="1">
+            <tocHeading>חוק רישוי שירותים ומקצועות בענף הרכב (תיקון מס' 6), התש"ף-2020</tocHeading>
+            <tocPointer href="#eop_14" type="page">14</tocPointer>
+          </tocItem>
+          <tocItem href="#cmp_3" level="1">
+            <tocHeading>חוק לתיקון פקודת התעבורה (מס' 120) (תיקון), התש"ף-2020</tocHeading>
+            <tocPointer href="#eop_14" type="page">14<eop eId="eop_13"/></tocPointer>
+          </tocItem>
+        </toc>
+      </container>
+    </coverPage>
+    <collectionBody>
+      <documentRef href="cmp_1" showAs="חוק שירותי תשלום (תיקון), התש״ף-2020"/>
+      <documentRef href="cmp_2" showAs="חוק רישוי שירותים ומקצועות בענף הרכב (תיקון מס' 6), התש״ף-2020"/>
+      <documentRef href="cmp_3" showAs="חוק לתיקון פקודת התעבורה (מס' 120) (תיקון), התש״ף-2020"/>
+    </collectionBody>
+    <components>
+      <component eId="cmp_1">
+        <act contains="originalVersion" name="publicLaw">
+          <meta>
+            <identification source="#cmp_1__הכנסת">
+              <FRBRWork>
+                <FRBRthis value="/akn/il/act/law/2020/2084505/!main"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084505"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084505"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_1__הכנסת"/>
+                <FRBRcountry value="il"/>
+                <FRBRsubtype showAs="law" value="law"/>
+                <FRBRnumber value="2084505"/>
+              </FRBRWork>
+              <FRBRExpression>
+                <FRBRthis value="/akn/il/act/law/2020/2084505/heb@/main"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084505/heb@"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084505/heb@"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_1__הכנסת"/>
+                <FRBRlanguage language="heb"/>
+              </FRBRExpression>
+              <FRBRManifestation>
+                <FRBRthis value="/akn/il/act/law/2020/2084505/heb@/main.akn"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084505/heb@.akn"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084505/heb@.akn"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_1__הכנסת"/>
+                <FRBRformat value="xml"/>
+              </FRBRManifestation>
+            </identification>
+            <classification source="#cmp_1__הכנסת">
+              <keyword dictionary="#cmp_1__סיווג_החוקים" showAs="{classificationValue}" value="{classificationValue}"/>
+            </classification>
+            <lifecycle source="#cmp_1__kensset">
+              <eventRef akn4il:date="כג-שבט-התשף" date="2020-02-18" eId="cmp_1__eventRef_1" source="#cmp_1__הכנסת" type="generation"/>
+            </lifecycle>
+            <references source="#cmp_1__הכנסת">
+              <TLCObject eId="cmp_1__סיווג_החוקים" href="/akn/ontology/object/il/סיווג_החוקים" showAs="تصنيف القوانين"/>
+              <TLCObject eId="cmp_1__כניסה_לתוקף" href="/akn/ontology/process/il/כניסה_לתוקף" showAs="تاريخ السريان"/>
+              <TLCOrganization eId="cmp_1__הכנסת" href="/akn/ontology/organization/il/הכנסת" showAs="الكنيست"/>
+              <TLCRole eId="cmp_1__מחבר" href="/akn/ontology/role/il/מחבר" showAs="كاتب الملف"/>
+              <TLCProcess eId="cmp_1__תאריך_כניסה_לתוקף" href="/akn/ontology/process/il/תאריך_כניסה_לתוקף" showAs="حسب مدلولها"/>
+              <TLCPerson eId="cmp_1__בנימין_נתניהו" href="/akn/ontology/person/il/בנימין_נתניהו" showAs="بنيامين نتنياهو"/>
+              <TLCPerson eId="cmp_1__אמיר_אוחנה" href="/akn/ontology/person/il/אמיר_אוחנה" showAs="أمير اوحانا"/>
+              <TLCPerson eId="cmp_1__ראובן_ריבלין" href="/akn/ontology/person/il/ראובן_ריבלין" showAs="رؤبين ريفلين"/>
+              <TLCPerson eId="cmp_1__יולי_יואל_אדלשטיין" href="/akn/ontology/person/il/יולי_יואל_אדלשטיין" showAs="يولي يوئيل ادلشتاين"/>
+              <TLCRole eId="cmp_1__ראש_הממשלה" href="/akn/ontology/roles/il/ראש_הממשלה" showAs="رئيس الحكومة"/>
+              <TLCRole eId="cmp_1__שר_המשפטים" href="/akn/ontology/roles/il/שר_המשפטים" showAs="وزير العدل"/>
+              <TLCRole eId="cmp_1__נשיא_המדינה" href="/akn/ontology/roles/il/נשיא_המדינה" showAs="رئيس الدولة"/>
+              <TLCRole eId="cmp_1__יושב_ראש_הכנסת" href="/akn/ontology/roles/il/יושב_ראש_הכנסת" showAs="رئيس الكنيست"/>
+            </references>
+            <notes/>
+            <temporalData source="#cmp_1__הכנסת">
+              <temporalGroup eId="cmp_1__tmpg_1">
+                <timeInterval refersTo="cmp_1__כניסה_לתוקף" start="eventRef_1"/>
+              </temporalGroup>
+            </temporalData>
+          </meta>
+          <preface>
+            <container name="title">
+              <p>
+                <docTitle eId="cmp_1__title">חוק שירותי תשלום (תיקון), התש"ף-2020<authorialNote eId="cmp_1__authorialNote_*" marker="*" placement="bottom"><p>התקבל בכנסת ביום כ"ב בשבט התש"ף (17 בפברואר 2020); הצעת החוק ודברי הסבר פורסמו בהצעות חוק הממשלה - 1291, מיום כ' בכסלו התש"ף (18 בדצמבר 2019), עמ' 2.</p></authorialNote></docTitle>
+                <docNumber eId="cmp_1__docNumber"/>
+              </p>
+            </container>
+          </preface>
+          <body period="#cmp_1__tmpg_1">
+            <article eId="cmp_1__art_1">
+              <heading eId="cmp_1__art_1__head">
+                <p>תיקון סעיף 77</p>
+              </heading>
+              <num>1.</num>
+              <content>
+                <p>בחוק שירותי תשלום, התשע"ט-2019<authorialNote eId="cmp_1__authorialNote_1" marker="1" placement="bottom"><p>ס"ח התשע"ט, עמ' 201.</p></authorialNote>, בסעיף 77(א), במקום "שנה מיום פרסומו" יבוא "ביום כ"ו בתשרי התשפ"א (14 באוקטובר 2020)".</p>
+              </content>
+            </article>
+            <article eId="cmp_1__art_2">
+              <heading eId="cmp_1__art_2__head">
+                <p>תחילה</p>
+              </heading>
+              <num>2.</num>
+              <content>
+                <p>תחילתו של חוק זה ביום י"ב בטבת התש"ף (9 בינואר 2020).</p>
+              </content>
+            </article>
+          </body>
+          <conclusions eId="cmp_1__eId">
+            <p class="signatures">
+              <signature>
+                <p>
+                  <person refersTo="cmp_1__בנימין_נתניהו">بنيامين نتنياهو</person>
+                  <role refersTo="cmp_1__ראש_הממשלה">رئيس الحكومة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_1__אמיר_אוחנה">أمير اوحانا</person>
+                  <role refersTo="cmp_1__שר_המשפטים">وزير العدل</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_1__ראובן_ריבלין">رؤبين ريفلين</person>
+                  <role refersTo="cmp_1__נשיא_המדינה">رئيس الدولة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_1__יולי_יואל_אדלשטיין">يولي يوئيل ادلشتاين</person>
+                  <role refersTo="cmp_1__יושב_ראש_הכנסת">رئيس الكنيست</role>
+                </p>
+              </signature>
+            </p>
+          </conclusions>
+        </act>
+      </component>
+      <component eId="cmp_2">
+        <act contains="originalVersion" name="publicLaw">
+          <meta>
+            <identification source="#cmp_2__הכנסת">
+              <FRBRWork>
+                <FRBRthis value="/akn/il/act/law/2020/2084506/!main"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084506"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084506"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_2__הכנסת"/>
+                <FRBRcountry value="il"/>
+                <FRBRsubtype showAs="law" value="law"/>
+                <FRBRnumber value="2084506"/>
+              </FRBRWork>
+              <FRBRExpression>
+                <FRBRthis value="/akn/il/act/law/2020/2084506/heb@/main"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084506/heb@"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084506/heb@"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_2__הכנסת"/>
+                <FRBRlanguage language="heb"/>
+              </FRBRExpression>
+              <FRBRManifestation>
+                <FRBRthis value="/akn/il/act/law/2020/2084506/heb@/main.akn"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084506/heb@.akn"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084506/heb@.akn"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_2__הכנסת"/>
+                <FRBRformat value="xml"/>
+              </FRBRManifestation>
+            </identification>
+            <classification source="#cmp_2__הכנסת">
+              <keyword dictionary="#cmp_2__סיווג_החוקים" showAs="{classificationValue}" value="{classificationValue}"/>
+            </classification>
+            <lifecycle source="#cmp_2__kensset">
+              <eventRef akn4il:date="כג-שבט-התשף" date="2020-02-18" eId="cmp_2__eventRef_1" source="#cmp_2__הכנסת" type="generation"/>
+            </lifecycle>
+            <references source="#cmp_2__הכנסת">
+              <TLCObject eId="cmp_2__סיווג_החוקים" href="/akn/ontology/object/il/סיווג_החוקים" showAs="تصنيف القوانين"/>
+              <TLCObject eId="cmp_2__כניסה_לתוקף" href="/akn/ontology/process/il/כניסה_לתוקף" showAs="تاريخ السريان"/>
+              <TLCOrganization eId="cmp_2__הכנסת" href="/akn/ontology/organization/il/הכנסת" showAs="الكنيست"/>
+              <TLCRole eId="cmp_2__מחבר" href="/akn/ontology/role/il/מחבר" showAs="كاتب الملف"/>
+              <TLCProcess eId="cmp_2__תאריך_כניסה_לתוקף" href="/akn/ontology/process/il/תאריך_כניסה_לתוקף" showAs="حسب مدلولها"/>
+              <TLCPerson eId="cmp_2__בנימין_נתניהו" href="/akn/ontology/person/il/בנימין_נתניהו" showAs="بنيامين نتنياهو"/>
+              <TLCPerson eId="cmp_2__בצלאל_סמוטריץ'" href="/akn/ontology/person/il/בצלאל_סמוטריץ'" showAs="بتسلئيل سموتريتش"/>
+              <TLCPerson eId="cmp_2__ראובן_ריבלין" href="/akn/ontology/person/il/ראובן_ריבלין" showAs="رؤبين ريفلين"/>
+              <TLCPerson eId="cmp_2__יולי_יואל_אדלשטיין" href="/akn/ontology/person/il/יולי_יואל_אדלשטיין" showAs="يولي يوئيل ادلشتاين"/>
+              <TLCRole eId="cmp_2__ראש_הממשלה" href="/akn/ontology/roles/il/ראש_הממשלה" showAs="رئيس الحكومة"/>
+              <TLCRole eId="cmp_2__שר_התחבורה_והבטיחות_בדרכים" href="/akn/ontology/roles/il/שר_התחבורה_והבטיחות_בדרכים" showAs="وزير المواصالت والسالمة في الطرق"/>
+              <TLCRole eId="cmp_2__נשיא_המדינה" href="/akn/ontology/roles/il/נשיא_המדינה" showAs="رئيس الدولة"/>
+              <TLCRole eId="cmp_2__יושב_ראש_הכנסת" href="/akn/ontology/roles/il/יושב_ראש_הכנסת" showAs="رئيس الكنيست"/>
+            </references>
+            <notes/>
+            <temporalData source="#cmp_2__הכנסת">
+              <temporalGroup eId="cmp_2__tmpg_1">
+                <timeInterval refersTo="cmp_2__כניסה_לתוקף" start="eventRef_1"/>
+              </temporalGroup>
+            </temporalData>
+          </meta>
+          <preface>
+            <container name="title">
+              <p>
+                <docTitle eId="cmp_2__title">חוק רישוי שירותים ומקצועות בענף הרכב (תיקון מס' 6), התש"ף-2020<authorialNote eId="cmp_2__authorialNote_*" marker="*" placement="bottom"><p>התקבל בכנסת ביום כ"ב בשבט התש"ף (17 בפברואר 2020); הצעת החוק ודברי הסבר פורסמו בהצעות חוק הממשלה - 1292, מיום כ' בכסלו התש"ף (18 בדצמבר 2019), עמ' 4.</p></authorialNote></docTitle>
+                <docNumber eId="cmp_2__docNumber"/>
+              </p>
+            </container>
+          </preface>
+          <body period="#cmp_2__tmpg_1">
+            <article eId="cmp_2__art_1">
+              <heading eId="cmp_2__art_1__head">
+                <p>תיקון סעיף 247</p>
+              </heading>
+              <num>1.</num>
+              <content>
+                <p>בחוק רישוי שירותים ומקצועות בענף הרכב, התשע"ו-2016<authorialNote eId="cmp_2__authorialNote_1" marker="1" placement="bottom"><p>ס"ח התשע"ו, עמ' 970; התשע"ט, עמ' 254. הערות הערות הערות</p></authorialNote>, בסעיף 247, במקום "ג' בטבת התש"ף (31 בדצמבר 2019)" יבוא "ט"ז בטבת התשפ"א (31 בדצמבר 2020)".</p>
+              </content>
+            </article>
+            <article eId="cmp_2__art_2">
+              <heading eId="cmp_2__art_2__head">
+                <p>תחילה</p>
+              </heading>
+              <num>2.</num>
+              <content>
+                <p>תחילתו של חוק זה ביום ג' בטבת התש"ף (31 בדצמבר 2019).</p>
+              </content>
+            </article>
+          </body>
+          <conclusions eId="cmp_2__eId">
+            <p class="signatures">
+              <signature>
+                <p>
+                  <person refersTo="cmp_2__בנימין_נתניהו">بنيامين نتنياهو</person>
+                  <role refersTo="cmp_2__ראש_הממשלה">رئيس الحكومة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_2__בצלאל_סמוטריץ'">بتسلئيل سموتريتش</person>
+                  <role refersTo="cmp_2__שר_התחבורה_והבטיחות_בדרכים">وزير المواصالت والسالمة في الطرق</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_2__ראובן_ריבלין">رؤبين ريفلين</person>
+                  <role refersTo="cmp_2__נשיא_המדינה">رئيس الدولة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_2__יולי_יואל_אדלשטיין">يولي يوئيل ادلشتاين</person>
+                  <role refersTo="cmp_2__יושב_ראש_הכנסת">رئيس الكنيست</role>
+                </p>
+              </signature>
+            </p>
+          </conclusions>
+        </act>
+      </component>
+      <component eId="cmp_3">
+        <act contains="originalVersion" name="publicLaw">
+          <meta>
+            <identification source="#cmp_3__הכנסת">
+              <FRBRWork>
+                <FRBRthis value="/akn/il/act/law/2020/2084507/!main"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084507"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084507"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_3__הכנסת"/>
+                <FRBRcountry value="il"/>
+                <FRBRsubtype showAs="law" value="law"/>
+                <FRBRnumber value="2084507"/>
+              </FRBRWork>
+              <FRBRExpression>
+                <FRBRthis value="/akn/il/act/law/2020/2084507/heb@/main"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084507/heb@"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084507/heb@"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_3__הכנסת"/>
+                <FRBRlanguage language="heb"/>
+              </FRBRExpression>
+              <FRBRManifestation>
+                <FRBRthis value="/akn/il/act/law/2020/2084507/heb@/main.akn"/>
+                <FRBRuri value="/akn/il/act/law/2020/2084507/heb@.akn"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084507/heb@.akn"/>
+                <FRBRdate akn4il:date="כג-שבט-התשף" date="2020-02-18" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_3__הכנסת"/>
+                <FRBRformat value="xml"/>
+              </FRBRManifestation>
+            </identification>
+            <classification source="#cmp_3__הכנסת">
+              <keyword dictionary="#cmp_3__סיווג_החוקים" showAs="{classificationValue}" value="{classificationValue}"/>
+            </classification>
+            <lifecycle source="#cmp_3__kensset">
+              <eventRef akn4il:date="כג-שבט-התשף" date="2020-02-18" eId="cmp_3__eventRef_1" source="#cmp_3__הכנסת" type="generation"/>
+            </lifecycle>
+            <references source="#cmp_3__הכנסת">
+              <TLCObject eId="cmp_3__סיווג_החוקים" href="/akn/ontology/object/il/סיווג_החוקים" showAs="تصنيف القوانين"/>
+              <TLCObject eId="cmp_3__כניסה_לתוקף" href="/akn/ontology/process/il/כניסה_לתוקף" showAs="تاريخ السريان"/>
+              <TLCOrganization eId="cmp_3__הכנסת" href="/akn/ontology/organization/il/הכנסת" showAs="الكنيست"/>
+              <TLCRole eId="cmp_3__מחבר" href="/akn/ontology/role/il/מחבר" showAs="كاتب الملف"/>
+              <TLCProcess eId="cmp_3__תאריך_כניסה_לתוקף" href="/akn/ontology/process/il/תאריך_כניסה_לתוקף" showAs="حسب مدلولها"/>
+              <TLCPerson eId="cmp_3__בנימין_נתניהו" href="/akn/ontology/person/il/בנימין_נתניהו" showAs="بنيامين نتنياهو"/>
+              <TLCPerson eId="cmp_3__בצלאל_סמוטריץ'" href="/akn/ontology/person/il/בצלאל_סמוטריץ'" showAs="بتسلئيل سموتريتش"/>
+              <TLCPerson eId="cmp_3__ראובן_ריבלין" href="/akn/ontology/person/il/ראובן_ריבלין" showAs="رؤبين ريفلين"/>
+              <TLCPerson eId="cmp_3__יולי_יואל_אדלשטיין" href="/akn/ontology/person/il/יולי_יואל_אדלשטיין" showAs="يولي يوئيل ادلشتاين"/>
+              <TLCRole eId="cmp_3__ראש_הממשלה" href="/akn/ontology/roles/il/ראש_הממשלה" showAs="رئيس الحكومة"/>
+              <TLCRole eId="cmp_3__שר_התחבורה_והבטיחות_בדרכים" href="/akn/ontology/roles/il/שר_התחבורה_והבטיחות_בדרכים" showAs="وزير المواصالت والسالمة في الطرق"/>
+              <TLCRole eId="cmp_3__נשיא_המדינה" href="/akn/ontology/roles/il/נשיא_המדינה" showAs="رئيس الدولة"/>
+              <TLCRole eId="cmp_3__יושב_ראש_הכנסת" href="/akn/ontology/roles/il/יושב_ראש_הכנסת" showAs="رئيس الكنيست"/>
+            </references>
+            <notes/>
+            <temporalData source="#cmp_3__הכנסת">
+              <temporalGroup eId="cmp_3__tmpg_1">
+                <timeInterval refersTo="cmp_3__כניסה_לתוקף" start="eventRef_1"/>
+              </temporalGroup>
+            </temporalData>
+          </meta>
+          <preface>
+            <container name="title">
+              <p>
+                <docTitle eId="cmp_3__title">חוק לתיקון פקודת התעבורה (מס' 120) (תיקון), התש"ף-2020<authorialNote eId="cmp_3__authorialNote_*" marker="*" placement="bottom"><p>התקבל בכנסת ביום כ"ב בשבט התש"ף (17 בפברואר 2020); הצעת החוק ודברי הסבר פורסמו בהצעות חוק הממשלה - 1293, מיום כ' בכסלו התש"ף (18 בדצמבר 2019), עמ' 6.</p></authorialNote></docTitle>
+                <docNumber eId="cmp_3__docNumber"/>
+              </p>
+            </container>
+          </preface>
+          <body period="#cmp_3__tmpg_1">
+            <article eId="cmp_3__art_1">
+              <heading eId="cmp_3__art_1__head">
+                <p>תיקון סעיף 15</p>
+              </heading>
+              <num>1.</num>
+              <content>
+                <p>בחוק לתיקון פקודת התעבורה (מס' 120), התשע"ח-2018<authorialNote eId="cmp_3__authorialNote_1" marker="1" placement="bottom"><p>ס"ח התשע"ח, עמ' 130.</p></authorialNote>, בסעיף 15, בסעיף קטן (א), במקום "מיום ג' בטבת התש"ף (31 בדצמבר 2019)" יבוא "מיום ט"ז בטבת התשפ"א (31 בדצמבר 2020)".</p>
+              </content>
+            </article>
+            <article eId="cmp_3__art_2">
+              <heading eId="cmp_3__art_2__head">
+                <p>תחילה</p>
+              </heading>
+              <num>2.</num>
+              <content>
+                <p>תחילתו של חוק זה ביום ג' בטבת התש"ף (31 בדצמבר 2019).</p>
+              </content>
+            </article>
+          </body>
+          <conclusions eId="cmp_3__eId">
+            <p class="signatures">
+              <signature>
+                <p>
+                  <person refersTo="cmp_3__בנימין_נתניהו">بنيامين نتنياهو</person>
+                  <role refersTo="cmp_3__ראש_הממשלה">رئيس الحكومة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_3__בצלאל_סמוטריץ'">بتسلئيل سموتريتش</person>
+                  <role refersTo="cmp_3__שר_התחבורה_והבטיחות_בדרכים">وزير المواصالت والسالمة في الطرق</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_3__ראובן_ריבלין">رؤبين ريفلين</person>
+                  <role refersTo="cmp_3__נשיא_המדינה">رئيس الدولة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_3__יולי_יואל_אדלשטיין">يولي يوئيل ادلشتاين</person>
+                  <role refersTo="cmp_3__יושב_ראש_הכנסת">رئيس الكنيست</role>
+                </p>
+              </signature>
+            </p>
+          </conclusions>
+        </act>
+      </component>
+    </components>
+  </officialGazette>
+</akomaNtoso>

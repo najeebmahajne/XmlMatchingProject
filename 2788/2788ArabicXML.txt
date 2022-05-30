@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akn4il="http://www.justice.gov.il/propetary.xsd">
+  <officialGazette xmlns="" name="סח">
+    <meta>
+      <identification source="#kensset">
+        <FRBRWork>
+          <FRBRthis value="/akn/il/officialGazette/lawBook/2019/2788/!main"/>
+          <FRBRuri value="/akn/il/officialGazette/lawBook/2019/2788"/>
+          <FRBRalias name="" value="/akn/il/officialGazette/‏סח‎/‏התשף‎/2788"/>
+          <FRBRdate akn4il:date="יד-כסלו-התשף" date="2019-12-12" name="תאריך יצירה"/>
+          <FRBRauthor as="#מחבר" href="#רשומות"/>
+          <componentInfo>
+            <componentData href="/akn/il/act/law/2019/2084458" name="חוק" showAs="قانون حل الكنيست الثانية والعشرين وتبكير االنتخابات لسنة 5780-2019 ..................4"/>
+          </componentInfo>
+          <FRBRcountry value="il"/>
+          <FRBRsubtype showAs="lawBook" value="lawBook"/>
+          <FRBRnumber value="2788"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/il/officialGazette/lawBook/2019/2788/heb@/!main"/>
+          <FRBRuri value="/akn/il/officialGazette/lawBook/2019/2788/heb@"/>
+          <FRBRalias name="" value="/akn/il/officialGazette/‏סח‎/‏התשף‎/2788/heb@"/>
+          <FRBRdate akn4il:date="יד-כסלו-התשף" date="2019-12-12" name="תאריך יצירה"/>
+          <FRBRauthor as="#מחבר" href="#רשומות"/>
+          <componentInfo>
+            <componentData href="/akn/il/act/law/2019/2084458/heb@" name="חוק" showAs="חוק התפזרות הכנסת העשרים ושתיים והקדמת הבחירות, התש״ף-2019"/>
+          </componentInfo>
+          <FRBRlanguage language="heb"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/il/officialGazette/lawBook/2019/2788/heb@/main.akn"/>
+          <FRBRuri value="/akn/il/officialGazette/lawBook/2019/2788/heb@.akn"/>
+          <FRBRalias name="" value="/akn/il/officialGazette/‏סח‎/‏התשף‎/2788/heb@.akn"/>
+          <FRBRdate akn4il:date="יד-כסלו-התשף" date="2019-12-12" name="תאריך יצירה"/>
+          <FRBRauthor as="#מחבר" href="#רשומות"/>
+          <componentInfo>
+            <componentData href="/akn/il/officialGazette/lawBook/2019/2788/heb@/main.akn" name="ספר החוקים" showAs="كتاب القوانين"/>
+            <componentData href="media/Emblem_of_Israel.png" name="סמל המדינה" showAs="رمز دولة اسرائيل"/>
+          </componentInfo>
+          <FRBRformat value="xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication akn4il:date="יד-כסלו-התשף" date="2019-12-12" name="ספר החוקים" number="2788" showAs="كتاب القوانين"/>
+      <references source="#רשומות">
+        <original eId="gazette_rol" href="/akn/il/officialGazette/lawBook/2019/2788/heb@" showAs="origin"/>
+        <TLCConcept eId="ספר_החוקים" href="/akn/ontology/concept/il/ספר_החוקים" showAs="كتاب القوانين"/>
+        <TLCOrganization eId="רשומות" href="/akn/ontology/organizations/il/רשומות" showAs="generation"/>
+        <TLCRole eId="מחבר" href="/akn/ontology/roles/il/מחבר" showAs="كاتب الملف"/>
+        <TLCRole eId="עורך" href="/akn/ontology/roles/il/עורך" showAs="محرر الملف"/>
+        <TLCConcept eId="תאריך_פרסום_המסמך" href="/akn/ontology/concept/il/תאריך_פרסום_המסמך" showAs="تاريخ نشر الملف"/>
+      </references>
+      <proprietary source="#רשומות">
+        <akn4il:footerEditoriaInfo class="footerEditorialInfo">
+          <akn4il:price>המחיר 81 אגורות</akn4il:price>
+          <akn4il:ISSN>3030-0334 ISSN</akn4il:ISSN>
+          <akn4il:gazettePrinter>סודר במח' רשומות, משרד המשפטים, והודפס במדפיס הממשלתי</akn4il:gazettePrinter>
+        </akn4il:footerEditoriaInfo>
+      </proprietary>
+      <presentation source="#רשומות">
+        <akn4il:officialGazetteeCSS>officialGazettee.css</akn4il:officialGazetteeCSS>
+      </presentation>
+    </meta>
+    <coverPage>
+      <container eId="coverPage_1" name="עמוד_שער">
+        <block name="firstPartOfCover">
+          <img class="centerd" src="media/Emblem_of_Israel.png"/>
+          <organization refersTo="#רשומות">السجلات</organization>
+          <docType refersTo="#ספר_החוקים">كتاب القوانين</docType>
+        </block>
+        <block class="underline" name="secondPartOfCover">
+          <docDate akn4il:date="יד-כסלו-התשף" date="2019-12-12" eId="coverPage_1__docdate_1_he" refersTo="#תאריך_פרסום_המסמך">י"ד בכסלו התש"ף</docDate>
+          <docNumber>2788</docNumber>
+          <docDate alternativeTo="coverPage_1__docdate_1_he" date="2019-12-12" eId="coverPage_1__docdate_1_gr" refersTo="#תאריך_פרסום_המסמך">12 בדצמבר 2019</docDate>
+        </block>
+        <toc>
+          <tocItem href="" level="1">
+            <tocHeading/>
+            <tocHeading>עמוד</tocHeading>
+          </tocItem>
+          <tocItem href="#cmp_1" level="1">
+            <tocHeading>חוק התפזרות הכנסת העשרים ושתיים והקדמת הבחירות, התש"ף-2019</tocHeading>
+            <tocPointer href="#eop_" type="page">
+              <eop eId="eop_3"/>
+            </tocPointer>
+          </tocItem>
+        </toc>
+      </container>
+    </coverPage>
+    <collectionBody>
+      <documentRef href="cmp_1" showAs="חוק התפזרות הכנסת העשרים ושתיים והקדמת הבחירות, התש״ף-2019"/>
+    </collectionBody>
+    <components>
+      <component eId="cmp_1">
+        <act contains="originalVersion" name="publicLaw">
+          <meta>
+            <identification source="#cmp_1__הכנסת">
+              <FRBRWork>
+                <FRBRthis value="/akn/il/act/law/2019/2084458/!main"/>
+                <FRBRuri value="/akn/il/act/law/2019/2084458"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084458"/>
+                <FRBRdate akn4il:date="יד-כסלו-התשף" date="2019-12-12" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_1__הכנסת"/>
+                <FRBRcountry value="il"/>
+                <FRBRsubtype showAs="law" value="law"/>
+                <FRBRnumber value="2084458"/>
+              </FRBRWork>
+              <FRBRExpression>
+                <FRBRthis value="/akn/il/act/law/2019/2084458/heb@/main"/>
+                <FRBRuri value="/akn/il/act/law/2019/2084458/heb@"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084458/heb@"/>
+                <FRBRdate akn4il:date="יד-כסלו-התשף" date="2019-12-12" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_1__הכנסת"/>
+                <FRBRlanguage language="heb"/>
+              </FRBRExpression>
+              <FRBRManifestation>
+                <FRBRthis value="/akn/il/act/law/2019/2084458/heb@/main.akn"/>
+                <FRBRuri value="/akn/il/act/law/2019/2084458/heb@.akn"/>
+                <FRBRalias name="hebrew URI" value="/akn/il/act/‏חוק‎/‏התשף‎/2084458/heb@.akn"/>
+                <FRBRdate akn4il:date="יד-כסלו-התשף" date="2019-12-12" name="תאריך יצירה"/>
+                <FRBRauthor as="#מחבר" href="#cmp_1__הכנסת"/>
+                <FRBRformat value="xml"/>
+              </FRBRManifestation>
+            </identification>
+            <classification source="#cmp_1__הכנסת">
+              <keyword dictionary="#cmp_1__סיווג_החוקים" showAs="{classificationValue}" value="{classificationValue}"/>
+            </classification>
+            <lifecycle source="#cmp_1__kensset">
+              <eventRef akn4il:date="יד-כסלו-התשף" date="2019-12-12" eId="cmp_1__eventRef_1" source="#cmp_1__הכנסת" type="generation"/>
+            </lifecycle>
+            <references source="#cmp_1__הכנסת">
+              <TLCObject eId="cmp_1__סיווג_החוקים" href="/akn/ontology/object/il/סיווג_החוקים" showAs="تصنيف القوانين"/>
+              <TLCObject eId="cmp_1__כניסה_לתוקף" href="/akn/ontology/process/il/כניסה_לתוקף" showAs="تاريخ السريان"/>
+              <TLCOrganization eId="cmp_1__הכנסת" href="/akn/ontology/organization/il/הכנסת" showAs="الكنيست"/>
+              <TLCRole eId="cmp_1__מחבר" href="/akn/ontology/role/il/מחבר" showAs="كاتب الملف"/>
+              <TLCProcess eId="cmp_1__תאריך_כניסה_לתוקף" href="/akn/ontology/process/il/תאריך_כניסה_לתוקף" showAs="حسب مدلولها"/>
+              <TLCPerson eId="cmp_1__בנימין_נתניהו" href="/akn/ontology/person/il/בנימין_נתניהו" showAs="بنيامين نتنياهو"/>
+              <TLCPerson eId="cmp_1__ראובן_ריבלין" href="/akn/ontology/person/il/ראובן_ריבלין" showAs="رؤبين ريفلين"/>
+              <TLCPerson eId="cmp_1__יולי_יואל_אדלשטיין" href="/akn/ontology/person/il/יולי_יואל_אדלשטיין" showAs="يولي يوئيل ادلشتاين"/>
+              <TLCRole eId="cmp_1__ראש_הממשלה" href="/akn/ontology/roles/il/ראש_הממשלה" showAs="رئيس الحكومة"/>
+              <TLCRole eId="cmp_1__נשיא_המדינה" href="/akn/ontology/roles/il/נשיא_המדינה" showAs="رئيس الدولة"/>
+              <TLCRole eId="cmp_1__יושב_ראש_הכנסת" href="/akn/ontology/roles/il/יושב_ראש_הכנסת" showAs="رئيس الكنيست"/>
+            </references>
+            <notes/>
+            <temporalData source="#cmp_1__הכנסת">
+              <temporalGroup eId="cmp_1__tmpg_1">
+                <timeInterval refersTo="cmp_1__כניסה_לתוקף" start="eventRef_1"/>
+              </temporalGroup>
+            </temporalData>
+          </meta>
+          <preface>
+            <container name="title">
+              <p>
+                <docTitle eId="cmp_1__title">חוק התפזרות הכנסת העשרים ושתיים והקדמת הבחירות, התש"ף-2019<authorialNote eId="cmp_1__authorialNote_*" marker="*" placement="bottom"><p>התקבל בכנסת ביום י"ד בכסלו התש"ף (12 בדצמבר 2019) [בישיבה שהחלה ביום י"ג בכסלו התש"ף (11 בדצמבר 2019)]; הצעת החוק ודברי הסבר פורסמו בהצעות חוק הכנסת - 839, מיום י"ג בכסלו התש"ף (11 בדצמבר 2019), עמ' 4. הערות</p></authorialNote></docTitle>
+                <docNumber eId="cmp_1__docNumber"/>
+              </p>
+            </container>
+          </preface>
+          <body period="#cmp_1__tmpg_1">
+            <article eId="cmp_1__art_1">
+              <heading eId="cmp_1__art_1__head">
+                <p>התפזרות הכנסת העשרים ושתיים</p>
+              </heading>
+              <num>1.</num>
+              <content>
+                <p>הכנסת העשרים ושתיים תתפזר לפני גמר כהונתה.</p>
+              </content>
+            </article>
+            <article eId="cmp_1__art_2">
+              <heading eId="cmp_1__art_2__head">
+                <p>הבחירות לכנסת העשרים ושלוש</p>
+              </heading>
+              <num>2.</num>
+              <content>
+                <p>הבחירות לכנסת העשרים ושלוש יתקיימו ביום ו' באדר התש"ף (2 במרס 2020).</p>
+              </content>
+            </article>
+            <article eId="cmp_1__art_3">
+              <heading eId="cmp_1__art_3__head">
+                <p>תחילה</p>
+              </heading>
+              <num>3.</num>
+              <content>
+                <p>תחילתו של חוק זה ביום קבלתו בכנסת.</p>
+              </content>
+            </article>
+          </body>
+          <conclusions eId="cmp_1__eId">
+            <p class="signatures">
+              <signature>
+                <p>
+                  <person refersTo="cmp_1__בנימין_נתניהו">بنيامين نتنياهو</person>
+                  <role refersTo="cmp_1__ראש_הממשלה">رئيس الحكومة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_1__ראובן_ריבלין">رؤبين ريفلين</person>
+                  <role refersTo="cmp_1__נשיא_המדינה">رئيس الدولة</role>
+                </p>
+              </signature>
+              <signature>
+                <p>
+                  <person refersTo="cmp_1__יולי_יואל_אדלשטיין">يولي يوئيل ادلشتاين</person>
+                  <role refersTo="cmp_1__יושב_ראש_הכנסת">رئيس الكنيست</role>
+                </p>
+              </signature>
+            </p>
+          </conclusions>
+        </act>
+      </component>
+    </components>
+  </officialGazette>
+</akomaNtoso>

@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class TextProccessing {
+public class PDFTextProccessing {
 	String filePath;
 	String text;
 	String[] sentences;
@@ -11,7 +11,7 @@ public class TextProccessing {
 	int sentencesnumber;
 	
 
-	public TextProccessing(String filePath,char languageLetter) throws FileNotFoundException {
+	public PDFTextProccessing(String filePath,char languageLetter) throws FileNotFoundException {
 		this.languageLetter=languageLetter;
 		this.filePath=filePath;
 		File file = new File(this.filePath);
@@ -28,6 +28,7 @@ public class TextProccessing {
 			
 			  
 	     }
+		//String[] textArr=text.split("המחיר",0);
 	     myReader.close();
 	     
 	  
@@ -39,6 +40,7 @@ public class TextProccessing {
 	 	PunctuationsRemover puncRemover=new PunctuationsRemover();
 	 	if(languageLetter=='A') {
 	 		AraNormalizer arn=new AraNormalizer();
+	 		
 	 		String ArabicNormalizedText=arn.normalize(this.text);
 			ArabicNormalizedText = diacRemover.removeDiacritics(ArabicNormalizedText);
 			ArabicNormalizedText = puncRemover.removePunctuations(ArabicNormalizedText);
@@ -48,7 +50,7 @@ public class TextProccessing {
 			int i=0;
 			while (scanner.hasNextLine()) {
 			   String line = scanner.nextLine();
-			   this.sentences[i]=line;
+			  // this.sentences[i]=line;
 			   i++;
 			   // process the line
 			}
