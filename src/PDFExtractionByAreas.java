@@ -52,38 +52,49 @@ import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink;
 
 public class PDFExtractionByAreas {
 	ArrayList<String> arrlist= new ArrayList<String>(5); 
+	PDDocument doc;
+	String coverText;
+	String bodyText;
+	String marginsText;
+
+	/*public PDFExtractionByAreas(String filepath) 
+	{
+		 try {
+			this.doc=PDDocument.load(new File(filepath));
+			Start(this.doc);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}*/
 	
 	private static String[] PDFFILESARRAY = new String[5];
 	private static String[] BODYOUTPUTFILESARRAY = new String[5];
 	private static String[] MARGINSOUTPUTFILESARRAY = new String[5];
 	private static String[] COVERPAGEOUTPUTFILESARRAY = new String[5];
-	public static void main(String[] args) throws IOException {
+	private static String[] FOOTEROUTPUTFILESARRAY = new String[5];
+	public static void main(String args[]) throws IOException {
 		    // Instantiate the Factory
 			//laws' pdf file 
 			//File pdfFile = new File("C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\28122812.pdf");
 			//File pdfFile1 = new File("C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\2319-2382\\2367.pdf");
 		
-		BODYOUTPUTFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2790\\2790BODYTEXT.txt";
-		//BODYOUTPUTFILESARRAY[1]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2756\\2756BODYTEXT.txt";
-		//BODYOUTPUTFILESARRAY[2]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2762\\2762BODYTEXT.txt";
-		//BODYOUTPUTFILESARRAY[3]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2763\\2763BODYTEXT.txt";
-		//BODYOUTPUTFILESARRAY[4]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2765\\2765BODYTEXT.txt";
-		PDFFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2790\\2790.pdf";
-		//PDFFILESARRAY[1]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2756\\2756.pdf";
-		//PDFFILESARRAY[2]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2762\\2762.pdf";
-		//PDFFILESARRAY[3]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2763\\2763.pdf";
-		//PDFFILESARRAY[4]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2765\\2765.pdf";
-		MARGINSOUTPUTFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2790\\2790MARGINSTEXT.txt";
-		//MARGINSOUTPUTFILESARRAY[1]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2756\\2756MARGINSTEXT.txt";
-		//MARGINSOUTPUTFILESARRAY[2]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2762\\2762MARGINSTEXT.txt";
-		//MARGINSOUTPUTFILESARRAY[3]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2763\\2763MARGINSTEXT.txt";
-		//MARGINSOUTPUTFILESARRAY[4]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2765\\2765MARGINSTEXT.txt";
-		COVERPAGEOUTPUTFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\2790\\2790COVERPAGETEXT.txt";
-		for(int fileNum=0;fileNum<5;fileNum++) {
+		String[] documentsNumbers= {"2411"};//,"2804","2806","2813","2823"
+		  for(int docNumber=0;docNumber<documentsNumbers.length;docNumber++) {
+			  
+			  String docNum=documentsNumbers[docNumber];
+			  
+		BODYOUTPUTFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\"+docNum+"\\"+docNum+"BODYTEXT.txt";
+		PDFFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\"+docNum+"\\"+docNum+".pdf";
+		MARGINSOUTPUTFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\"+docNum+"\\"+docNum+"MARGINSTEXT.txt";
+		COVERPAGEOUTPUTFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\"+docNum+"\\"+docNum+"COVERPAGETEXT.txt";
+		FOOTEROUTPUTFILESARRAY[0]="C:\\Users\\HP\\Desktop\\FINAL PROJECT 3RD YEAR\\PDF ARAB LAW BOOKS\\27877-2853-Done\\LawBooks\\"+docNum+"\\"+docNum+"FOOTERTEXT.txt";
+		for(int fileNum=0;fileNum<1;fileNum++) {
 			
 		
 		try {
-			PDDocument doc = PDDocument.load(new File(PDFFILESARRAY[fileNum])); // Instantiate PDFTextStripper class
+			PDDocument doc = PDDocument.load(new File(PDFFILESARRAY[fileNum]));
 			PDDocumentInformation info = doc.getDocumentInformation();
 	        System.out.println("Page Count= " + doc.getNumberOfPages());
 	        System.out.println("Title = " + info.getTitle());
@@ -103,8 +114,7 @@ public class PDFExtractionByAreas {
 			
 		
 		      int pagesNum=doc.getNumberOfPages();
-		      FileWriter myWriter = new FileWriter(new File(BODYOUTPUTFILESARRAY[fileNum]),true);
-		      FileWriter myWriter1 = new FileWriter(new File(MARGINSOUTPUTFILESARRAY[fileNum]),true);
+		      
 		      FileWriter myWriter2 = new FileWriter(new File(COVERPAGEOUTPUTFILESARRAY[fileNum]),true);
 		      
 		      PDPage coverPage=doc.getPage(0);
@@ -115,10 +125,26 @@ public class PDFExtractionByAreas {
 		      String[] coverSentences=coverText.split("\r\n");
 		      for(int i=0;i<coverSentences.length;i++) 
 		      {
-		    	  if(coverSentences[i].contains("5")&&coverSentences[i].contains("قانون")) {
-		    		  int indx=coverSentences[i].indexOf("5");
+		    	  if(coverSentences[i].contains("57")&&coverSentences[i].contains("قانون")) {
+		    		  int indx=coverSentences[i].indexOf("57");
+		    		  if(indx!=-1&&indx+4<=coverSentences[i].length()) {
 		    		  coverSentences[i]=coverSentences[i].substring(0, indx+4);
-		    		  coverSentences[i]=coverSentences[i].replaceAll("\\d\\d\\s...", "");
+		    		  }else 
+		    		  {
+		    			 
+		    			  
+		    			  coverSentences[i]=coverSentences[i].substring(0, indx);
+		    		  }
+		    		  coverSentences[i]=coverSentences[i].replaceAll("\\d+\\s...", "");
+		    		  
+		    	  }else 
+		    	  {
+		    		  int indx1=coverSentences[i].indexOf("20");
+		    		  if(indx1!=-1) {
+	    			  coverSentences[i]=coverSentences[i].substring(0, indx1);
+		    		  }
+	    			  coverSentences[i]=coverSentences[i].replaceAll("\\d+\\.+", "");
+		    		  
 		    	  }
 		      }
 		      for(int i=0;i<coverSentences.length;i++) 
@@ -126,12 +152,19 @@ public class PDFExtractionByAreas {
 		    	  if(coverSentences[i].isBlank())
 	            		continue;
 		    	  myWriter2.write(coverSentences[i]+".\n");
+		    	  //this.coverText+=coverSentences[i]+".\n";
 		      }
 		      myWriter2.close();
 		      stripper.removeRegion("cover");
+		      
 		      for(int pageNum=1;pageNum<pagesNum;pageNum++) {
+		      FileWriter myWriter = new FileWriter(new File(BODYOUTPUTFILESARRAY[fileNum]),true);
+			  FileWriter myWriter1 = new FileWriter(new File(MARGINSOUTPUTFILESARRAY[fileNum]),true);
+			  FileWriter myWriter3 = new FileWriter(new File(FOOTEROUTPUTFILESARRAY[fileNum]),true);
+		    	  
 		      Rectangle rect = new Rectangle( 96, 146, 360, 560 );
 		      PDPage firstPage = doc.getPage(pageNum);
+		      firstPage.getCOSObject();
 			  Rectangle rect1 = new Rectangle( 450, 146, 42, 535 );
 		      stripper.addRegion("content", rect );
 		      stripper.addRegion("margins", rect1 );
@@ -152,31 +185,77 @@ public class PDFExtractionByAreas {
 		      
 		     
 		      
-		      String[] sentences=text.split("[\\.|*]");
+		      String[] bodySentences=text.split("[\\.|*|:|]");
+		      String[] footerSentences=new String[bodySentences.length];
+		      int footerIndex=0;
 		      //.split(stripper.getParagraphStart()
-		      for(int i=0;i<sentences.length;i++) 
+		      for(int i=0;i<bodySentences.length;i++) 
 		      {
-		    	  if(sentences[i].contains("بنيامين")&&sentences[i].contains("الكنيست")) {
-		    		  int firstIndx=sentences[i].indexOf("بنيامين");
-		    		  int lastIndx=sentences[i].indexOf("الكنيست");
-		    		  if(lastIndx>firstIndx)
-		    			  sentences[i]=sentences[i].substring(0, firstIndx)+sentences[i].substring(lastIndx+7);
-		    		  System.out.println(sentences[i]);
+		    	  if(bodySentences[i].contains("­")||bodySentences[i].contains("12016")||bodySentences[i].contains("12019")) {
+		    		  bodySentences[i]=bodySentences[i].replaceAll("­", " ");
+		    		  bodySentences[i]=bodySentences[i].replaceAll("12016", "2016");
+		    		  bodySentences[i]=bodySentences[i].replaceAll("12019", "2019");
+		    	  }
+		    	  if(bodySentences[i].contains("قانون")) 
+		    	  {
+		    		  int index=bodySentences[i].indexOf("قانون");
+		    		  if(index==0)
+		    			  bodySentences[i]="";
+		    		  
+		    	  }
+		    	  if(bodySentences[i].contains("أقرته")) {
+		    		  if(i+2<=bodySentences.length-1&&bodySentences[i+2].contains("\r\n")) {
+		    		  String[] str=bodySentences[i+2].split("\r\n");
+		    		  bodySentences[i]+="'"+bodySentences[i+1]+str[0];
+		    		  bodySentences[i+1]="";
+		    		  bodySentences[i+2]="";}
+		    		  if(bodySentences[i].contains("\r\n")) {
+		    		  bodySentences[i]=bodySentences[i].replaceAll("\r\n", " ");
+		    		  }
+		    		  bodySentences[i]=bodySentences[i].replaceFirst("\\s+1\\s+", " ");
+		    		  footerSentences[footerIndex]=bodySentences[i];
+		    		  bodySentences[i]="";;
+		    		  footerIndex++;
+		    		  
+		    	  }
+		    	  if(bodySentences[i].contains("بنيامين")&&bodySentences[i].contains("رئيس الكنيست")) {
+		    		  bodySentences[i]=bodySentences[i].replaceAll("تاري خ", "تاريخ");
+		    		  bodySentences[i]=bodySentences[i].replaceAll("االنتخابات", "الانتخابات");
+		    		  int firstIndx=bodySentences[i].indexOf("بنيامين");
+		    		  int lastIndx=bodySentences[i].indexOf("رئيس الكنيست");
+		    		  if(lastIndx>firstIndx&&lastIndx!=-1&&firstIndx!=-1)
+		    			  bodySentences[i]=bodySentences[i].substring(0, firstIndx)+bodySentences[i].substring(lastIndx+12);
+		    		  
 		    		 
 		    		  
-		    	  }else {
-		    		  System.out.println(sentences[i]);
-		    		 
-		    		
 		    	  }
 		    	
 		    	  
 		      }
-		      for(int i=0;i<sentences.length;i++) 
+		      //BODY TEXT
+		      for(int i=0;i<bodySentences.length;i++) 
 		      {
-		    	  if(sentences[i].isBlank())
+		    	  if(bodySentences[i].isBlank())
 	            		continue;
-		    	  myWriter.write(sentences[i]+".\n");
+		    	  System.out.println(bodySentences[i]);
+		    	  myWriter.write(bodySentences[i]+".\n");
+		    	 
+		      }
+		      //FOOTER TEXT
+		      for(int i=0;i<footerSentences.length;i++) 
+		      {
+		    	  if(footerSentences[i]==null)
+	            		continue;
+		    	  if(footerSentences[i].contains("كتاب")) 
+		    	  {
+		    		  int index=footerSentences[i].indexOf("كتاب");
+		    		  if(index!=-1)
+		    			  footerSentences[i]=footerSentences[i].substring(0, index);
+		    		  
+		    	  }
+		    	  System.out.println(footerSentences[i]);
+		    	  myWriter3.write(footerSentences[i]+".\n");
+		    	 
 		      }
 		      
 		      
@@ -186,9 +265,12 @@ public class PDFExtractionByAreas {
 		    //  System.out.println(text);
 		      
 		     
-		      
+		      //MARGIN TEXT
 		      String marginsText=stripper.getTextForRegion("margins");
 		      marginsText=marginsText.replaceAll("د ة", "دة");
+		      marginsText=marginsText.replaceAll("د ة", "دة");
+		      marginsText=marginsText.replaceAll("االنتخابا ت", "الانتخابات");
+		      marginsText=marginsText.replaceAll("الكنيس ت", "الكنيست");
 		      String regexMargins="\r\n\\d+";
 		      Pattern pattern = Pattern.compile(regexMargins);
 		      
@@ -205,7 +287,7 @@ public class PDFExtractionByAreas {
 		    	  String replacment=str.replaceAll("\r\n", " ");
 		    	  marginsText=marginsText.replaceAll(str, replacment);
 		      }
-		      System.out.println(marginsText);
+		      
 		      
 		      
 		      String[] margins=marginsText.split("\r\n");
@@ -217,10 +299,11 @@ public class PDFExtractionByAreas {
 		    	  
 	            	System.out.println(margins[i]);
 	            	
-	            	myWriter1.write(margins[i]+".");
+	            	myWriter1.write(margins[i]+".\n");
+	            	// this.marginsText+=sentences[i]+".\n";
 	            }
 		      
-		      
+		      myWriter3.close();
 		      myWriter1.close(); 
 		      myWriter.close();
 	            
@@ -229,7 +312,7 @@ public class PDFExtractionByAreas {
 		      }
 		     
 		      
-		      
+		    
 		      
 		}
 		catch(Exception exception) 
@@ -237,6 +320,7 @@ public class PDFExtractionByAreas {
 			System.out.println("not found");
 		}
 		}
+		  }
 		
 		
 		

@@ -21,7 +21,10 @@ public class XMLTagTextProccessing {
 		this.str=this.str.replaceAll("־", " ");
 		this.str=this.str.replaceAll("-", " ");
 		this.str=this.str.replaceAll(",", "");
+		this.str=this.str.replaceAll(",", "");
 		this.str=this.str.replaceAll("'", "");
+		this.str=this.str.replaceAll(";", "");
+		this.str=this.str.replaceAll("\"", "");
 		this.str=this.str.replaceAll("\\u0022\\s+", "");
 		
 		//this.str=this.str.replaceAll("\\u0028\\u0028+", "");
@@ -67,14 +70,14 @@ public class XMLTagTextProccessing {
           	  
           	  for(int i=0;i<this.tokens.length;i++) {
           		try {
-          			if(defenitions.defenitions.containsKey(this.tokens[i])) 
+          			if(defenitions.containsKey(this.tokens[i])) 
           			{
-          				translatedTokens[i]=defenitions.defenitions.get(this.tokens[i]);
+          				translatedTokens[i]=defenitions.getValue(this.tokens[i]);
           			}else 
           			{
           				translatedTokens[i]=GoogleTranslate.translate("ar", this.tokens[i]);
-          				if(translatedTokens[i]=="\\u0028\\u0028"||translatedTokens[i]=="\\u0029\\u0029")
-          					translatedTokens[i]="";
+          				
+          				
           			}
 					
 					//stemmedTokens[i]=findStem(translatedTokens[i]);
@@ -84,9 +87,12 @@ public class XMLTagTextProccessing {
 					// TODO Auto-generated catch block
 					
 				}
-          		if(translatedTokens[i]!=null) {
+          		if(translatedTokens[i]!=null&&translatedTokens[i]!="Peresomoya"&&translatedTokens[i]!="\\"&&translatedTokens[i]!="/") {
+          			
           		 TranslatedSentence1+=translatedTokens[i];
           		 TranslatedSentence1+=" ";}
+          		
+          		
           		 
           	  }//System.out.println(TranslatedSentence1);
 			}

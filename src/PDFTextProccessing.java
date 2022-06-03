@@ -6,7 +6,6 @@ public class PDFTextProccessing {
 	String filePath;
 	String text;
 	String[] sentences;
-	TrainedTokenizer tokenizer;
 	char languageLetter;
 	int sentencesnumber;
 	
@@ -14,6 +13,8 @@ public class PDFTextProccessing {
 	public PDFTextProccessing(String filePath,char languageLetter) throws FileNotFoundException {
 		this.languageLetter=languageLetter;
 		this.filePath=filePath;
+		//PDFExtractionByAreas extract = new PDFExtractionByAreas(filePath);
+		
 		File file = new File(this.filePath);
 		Scanner myReader = new Scanner(file);
 		this.text =myReader.next();
@@ -42,19 +43,19 @@ public class PDFTextProccessing {
 	 		AraNormalizer arn=new AraNormalizer();
 	 		
 	 		String ArabicNormalizedText=arn.normalize(this.text);
-			ArabicNormalizedText = diacRemover.removeDiacritics(ArabicNormalizedText);
-			ArabicNormalizedText = puncRemover.removePunctuations(ArabicNormalizedText);
-			//this.sentences=sentenceDetect.detectSentences(this.text);
-			this.sentences=new String[this.sentencesnumber];
-			Scanner scanner = new Scanner(new File(filePath));
+			//ArabicNormalizedText = diacRemover.removeDiacritics(ArabicNormalizedText);
+			//ArabicNormalizedText = puncRemover.removePunctuations(ArabicNormalizedText);
+
+			this.sentences=ArabicNormalizedText.split("\\.");
+			/*Scanner scanner = new Scanner(new File(filePath));
 			int i=0;
 			while (scanner.hasNextLine()) {
 			   String line = scanner.nextLine();
-			  // this.sentences[i]=line;
+			   this.sentences[i]=line;
 			   i++;
 			   // process the line
 			}
-			scanner.close();
+			scanner.close();*/
 	 	}else{
 	 		String HebrewNormalizedText=diacRemover.removeDiacritics(this.text);
 			HebrewNormalizedText = puncRemover.removePunctuations(HebrewNormalizedText);

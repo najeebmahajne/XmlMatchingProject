@@ -37,9 +37,15 @@ public class BodyContentChange {
 	String[] TXTFILESARRAY = new String[5];
 	 String[] NEWXMLFILESARRAY = new String[5];
 	
+	 
+	 Document PDFPage;
+	 File outputFile;
 	
 	
-	public static void main(String[] args) {
+	public void bodyChanger(Document PDFFile) {
+		this.PDFPage=PDFFile;
+		this.outputFile=outputFile;
+		
 		  String[] TXTFILESARRAY = new String[5];
 		 String[] NEWXMLFILESARRAY = new String[5];
 		Dictionary defenitions=new Dictionary();

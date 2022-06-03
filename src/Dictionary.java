@@ -14,14 +14,14 @@ public class Dictionary {
 	
 	public Dictionary() {
 		defenitions.put("איילת שקד","أييلت شكيد");
-		defenitions.put("","يولي يوئيل ادلشتاين");
+		defenitions.put("יואל יולי אדלשטיין","يولي يوئيل ادلشتاين");
 		defenitions.put("שרת המשפטים","وزيرة العدل");
-		defenitions.put("","");
-		defenitions.put("","");
-		defenitions.put("","");
-		defenitions.put("","");
-		defenitions.put("","");
-		defenitions.put("","");
+		defenitions.put("פרסומויבוא","نشره يحل");
+		defenitions.put("איציק שמולי","ايتسيك شمولي");
+		defenitions.put("התשעא","5771");
+		defenitions.put("בסיוון","سيفان");
+		defenitions.put("התשף","5780");
+		defenitions.put("תביעה אזרחית","دعوى حقوقية");
 		defenitions.put("","");
 		defenitions.put("","");
 		defenitions.put("","");
@@ -117,10 +117,10 @@ public class Dictionary {
 	     defenitions.put("התש\"ף","");
 	     defenitions.put("התשפ\"א","5781");
 	     defenitions.put("התש\"ף","");
-	     defenitions.put("","");
-	     defenitions.put("","");
-	     defenitions.put("","");
-	     defenitions.put("","");
+	     defenitions.put("עמ","ص");
+	     defenitions.put("סח","ك.ق");
+	     defenitions.put("התשעט","سنة 5779");
+	     defenitions.put("בטל","تلغى");
 	     
 		//try {
 			//this.readDataFromExcel();
@@ -167,6 +167,12 @@ public class Dictionary {
 			return defenitions.get(key);
 		else 
 			return null;
+	}
+	public boolean containsKey(String key) {
+		if(defenitions.containsKey(key))
+			return true;
+		else 
+			return false;
 	}
 
 
