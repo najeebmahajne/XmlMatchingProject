@@ -28,8 +28,8 @@ public class GetCharLocationAndSize extends PDFTextStripper {
         try {
             document = PDDocument.load( new File(fileName) );
             PDFTextStripper stripper = new GetCharLocationAndSize();
-            stripper.setSortByPosition( true );
-            stripper.setStartPage( 1 );
+            //stripper.setSortByPosition( true );
+            stripper.setStartPage( 0 );
             stripper.setEndPage( document.getNumberOfPages() );
   
             Writer dummy = new OutputStreamWriter(new ByteArrayOutputStream());
@@ -53,4 +53,6 @@ public class GetCharLocationAndSize extends PDFTextStripper {
                     text.getWidthDirAdj() + "]");
         }
     }
+    
+    
 }

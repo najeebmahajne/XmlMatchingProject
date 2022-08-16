@@ -22,9 +22,9 @@ public class Dictionary {
 		defenitions.put("בסיוון","سيفان");
 		defenitions.put("התשף","5780");
 		defenitions.put("תביעה אזרחית","دعوى حقوقية");
-		defenitions.put("","");
-		defenitions.put("","");
-		defenitions.put("","");
+		defenitions.put("גלעד ארדן","غلعاد أردان");
+		defenitions.put("שר הביטחון","وزير الأمن");
+		defenitions.put("משה יעלון","موشي يعلون");
 		defenitions.put("","");
 		defenitions.put("","");
 		defenitions.put("","");
